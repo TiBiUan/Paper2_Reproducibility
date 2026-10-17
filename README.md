@@ -65,7 +65,6 @@ New executions of the pipeline write their outputs to the local `results/` direc
 
 ```text
 Paper2_Reproducibility/
-├── config/
 ├── external/
 ├── src/
 ├── workflows/
