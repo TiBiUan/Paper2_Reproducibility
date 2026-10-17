@@ -25,6 +25,7 @@ The accompanying reproducibility dataset is distributed separately and contains 
 - **Main analysis script:** `workflows/Paper2/analyses/RunPaper2.m`
 - **Data:** distributed separately with the accompanying reproducibility dataset
 - **License:** MIT
+- **Archived code and data:** [Zenodo DOI: 10.5281/zenodo.23428343](https://doi.org/10.5281/zenodo.23428343)
 
 ---
 
@@ -186,8 +187,15 @@ Individual analysis scripts assume that the common initialization section of `Ru
 
 # Code and data availability
 
-The complete MATLAB source code, analysis workflow, documentation, and required third-party dependencies are available through the accompanying GitHub repository.
+The complete reproducibility package is archived on Zenodo:
 
-The analysis-ready inputs and reference analysis outputs are distributed separately through the accompanying Zenodo archive because of their size.
+**https://doi.org/10.5281/zenodo.23428343**
 
-Please refer to `DATA.md` for download, organization, and installation instructions.
+The archive contains two complementary files:
+
+- `Paper2_Reproducibility.zip` — MATLAB source code, analysis workflows, dependencies, and documentation.
+- `Paper2_Data.zip` — Analysis-ready inputs, predefined population splits, original manuscript results, and computational validation outputs.
+
+The source code is also available on [GitHub](https://github.com/TiBiUan/Paper2_Reproducibility).
+
+See [DATA.md](DATA.md) for details of the data organization and installation instructions.
