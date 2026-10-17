@@ -8,9 +8,11 @@
 
 %% 1. Configuration and setup
 
-% Set the location of the reproducibility repository
-RepositoryDir = '/Users/bolton/Desktop/Paper2_Reproducibility';
-DataDir = '/Users/bolton/Desktop/Paper2_Data';
+% Set the paths to the reproducibility repository and data archive
+% EDIT THESE PATHS BEFORE RUNNING
+RepositoryDir = '/path/to/Paper2_Reproducibility';
+DataDir = '/path/to/Paper2_Data';
+
 ResultsDir = fullfile(RepositoryDir,'results');
 
 if ~isfolder(ResultsDir)
