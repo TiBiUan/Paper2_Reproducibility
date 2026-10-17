@@ -1,0 +1,22 @@
+# macOS metadata
+.DS_Store
+._*
+__MACOSX/
+
+# MATLAB temporary and autosave files
+*.asv
+*.autosave
+*.m~
+*.slxc
+
+# MATLAB crash reports
+matlab_crash_dump.*
+java.log.*
+
+# Generated analysis results
+results/*
+!results/.gitkeep
+
+# Temporary files
+*.tmp
+*.temp
