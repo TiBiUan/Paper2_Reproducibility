@@ -1,10 +1,10 @@
 # Reproducibility Data
 
-The data accompanying the manuscript
+The reproducibility data accompanying this manuscript are available in the Zenodo archive:
 
-> **"When are population connectome harmonics adequate representations of individual brains?"**
+**https://doi.org/10.5281/zenodo.23428343**
 
-are distributed separately from the source code through the accompanying Zenodo archive.
+Download `Paper2_Data.zip` and extract it while preserving the original directory structure. The archive also contains `Paper2_Reproducibility.zip`, a snapshot of the corresponding MATLAB code.
 
 The archive contains the analysis-ready inputs required to execute the reproducibility workflow, together with reference outputs from the original manuscript analyses and the final computational validation of the released code.
 
