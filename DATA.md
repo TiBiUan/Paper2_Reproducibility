@@ -136,8 +136,6 @@ The reproducibility workflow begins from these analysis-ready inputs. It does no
 
 Further details regarding participant selection, image preprocessing, connectome construction, and functional-data processing are provided in the accompanying manuscript and its supplementary information.
 
-**Redistribution check before public release:** The inputs are derived from HCP participant data. Confirm that the HCP data-use terms applicable to these processed participant-level derivatives permit public redistribution on Zenodo, including subject identifiers, family-relatedness fields, behavioral scores, and regional time courses. If not, distribute only permitted materials and provide authorized users with instructions to reconstruct the restricted inputs.
-
 ---
 
 # Newly generated results
