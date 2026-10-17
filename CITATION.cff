@@ -1,0 +1,21 @@
+cff-version: 1.2.0
+message: "If you use this repository, please cite the accompanying manuscript."
+title: "When are population connectome harmonics adequate representations of individual brains?: Reproducibility Repository"
+type: software
+authors:
+  - family-names: Bolton
+    given-names: Thomas A. W.
+    email: thomas.bolton@epfl.ch
+license: MIT
+abstract: >
+  MATLAB code accompanying the manuscript
+  "When are population connectome harmonics adequate representations
+  of individual brains?"
+keywords:
+  - graph signal processing
+  - connectome harmonics
+  - structural connectivity
+  - population connectomes
+  - functional MRI
+  - neuroscience
+  - MATLAB
