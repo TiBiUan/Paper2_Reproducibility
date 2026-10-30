@@ -15,7 +15,7 @@ The study evaluates population-derived connectome harmonics along three compleme
 
 The repository additionally contains the analyses linking these three properties and assessing their dependence on population-connectome construction.
 
-The accompanying reproducibility dataset is distributed separately and contains the analysis-ready inputs, the population splits used in the study, the original manuscript analysis outputs, and the outputs obtained during the final computational validation of the repository.
+The accompanying reproducibility dataset is distributed separately through Zenodo as three archives containing the analysis-ready inputs, the population splits used in the study, retained original manuscript analysis outputs, and the outputs obtained during the final computational validation of the repository.
 
 ---
 
@@ -25,7 +25,6 @@ The accompanying reproducibility dataset is distributed separately and contains 
 - **Main analysis script:** `workflows/Paper2/analyses/RunPaper2.m`
 - **Data:** distributed separately with the accompanying reproducibility dataset
 - **License:** MIT
-- **Archived code and data:** [Zenodo DOI: 10.5281/zenodo.23428343](https://doi.org/10.5281/zenodo.23428343)
 
 ---
 
@@ -108,7 +107,7 @@ Paper2_Data/
 
 `Inputs/` contains the analysis-ready quantities required to execute the workflow. `PopSplits.mat` contains the population sampling used for the final validated analysis, allowing the released workflow to reproduce the same sampling realization rather than generating a new one.
 
-`Original/` contains the reference outputs from the original manuscript analyses, whereas `Validation/` contains the corresponding outputs obtained from the final clean rerun of the released workflow.
+`Original/` contains retained reference outputs from the original manuscript analyses (with redundant duplicates excluded), whereas `Validation/` contains the corresponding outputs obtained from the final clean rerun of the released workflow. The three directories are distributed as separate Zenodo ZIP archives.
 
 See `DATA.md` for a detailed description of the data files, provenance, access conditions, and installation instructions.
 
@@ -140,7 +139,7 @@ Clone or download the `Paper2_Reproducibility` repository.
 
 ## 2. Download the reproducibility data
 
-Download the accompanying `Paper2_Data` package and retain its directory structure.
+Download `Paper2_Data_Inputs.zip` from Zenodo. For reference outputs, also download `Paper2_Data_Original.zip` and `Paper2_Data_Validation.zip`. Extract the archives into a common `Paper2_Data/` directory, ensuring that it contains `Inputs/`, `Original/`, and `Validation/` as subdirectories (rather than additional nested archive folders). Only `Inputs/` is required to execute the workflow; `Validation/` is recommended for comparing results, and `Original/` provides retained historical outputs.
 
 The code and data directories do not need to be located inside one another.
 
@@ -187,15 +186,8 @@ Individual analysis scripts assume that the common initialization section of `Ru
 
 # Code and data availability
 
-The complete reproducibility package is archived on Zenodo:
+The complete MATLAB source code, analysis workflow, documentation, and required third-party dependencies are available through the accompanying GitHub repository.
 
-**https://doi.org/10.5281/zenodo.23428343**
+The analysis-ready inputs and reference analysis outputs are distributed separately through three ZIP files in the accompanying Zenodo record because of their size.
 
-The archive contains two complementary files:
-
-- `Paper2_Reproducibility.zip` — MATLAB source code, analysis workflows, dependencies, and documentation.
-- `Paper2_Data.zip` — Analysis-ready inputs, predefined population splits, original manuscript results, and computational validation outputs.
-
-The source code is also available on [GitHub](https://github.com/TiBiUan/Paper2_Reproducibility).
-
-See [DATA.md](DATA.md) for details of the data organization and installation instructions.
+Please refer to `DATA.md` for download, organization, and installation instructions.
