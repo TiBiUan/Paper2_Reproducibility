@@ -1,12 +1,12 @@
 # Reproducibility Data
 
-The reproducibility data accompanying this manuscript are available in the Zenodo archive:
+The data accompanying the manuscript
 
-**https://doi.org/10.5281/zenodo.23428343**
+> **"When are population connectome harmonics adequate representations of individual brains?"**
 
-Download `Paper2_Data.zip` and extract it while preserving the original directory structure. The archive also contains `Paper2_Reproducibility.zip`, a snapshot of the corresponding MATLAB code.
+are distributed separately from the source code through the accompanying Zenodo archive.
 
-The archive contains the analysis-ready inputs required to execute the reproducibility workflow, together with reference outputs from the original manuscript analyses and the final computational validation of the released code.
+The Zenodo record provides three separate ZIP archives: `Paper2_Data_Inputs.zip` (analysis-ready inputs required to execute the reproducibility workflow), `Paper2_Data_Original.zip` (retained original manuscript analysis outputs, excluding redundant duplicates), and `Paper2_Data_Validation.zip` (reference outputs from the final computational validation of the released code). Only the inputs archive is required to run the analyses; the reference archives support comparison and verification.
 
 ---
 
@@ -95,7 +95,7 @@ This file is loaded by stages requiring subject-level functional time courses. T
 
 ## `Original/`
 
-`Original/` contains the saved outputs generated during the original manuscript analyses.
+`Original/` contains retained outputs generated during the original manuscript analyses; redundant duplicate files were excluded from the distributed archive.
 
 These files provide a record of the numerical results underlying the manuscript prior to the final cleanup and validation of the released reproducibility workflow.
 
@@ -114,8 +114,9 @@ Neither `Original/` nor `Validation/` is modified when running the reproducibili
 # Installing the data
 
 1. Download or clone the `Paper2_Reproducibility` repository.
-2. Download the accompanying `Paper2_Data` archive from Zenodo and extract it without modifying the directory structure.
-3. At the beginning of `RunPaper2.m`, specify:
+2. Download `Paper2_Data_Inputs.zip` from Zenodo. To obtain reference outputs, also download `Paper2_Data_Original.zip` and `Paper2_Data_Validation.zip`.
+3. Extract each archive into a common `Paper2_Data/` directory, preserving `Inputs/`, `Original/`, and `Validation/` directly beneath it. Avoid introducing an additional nested directory if an archive already contains a `Paper2_Data/` folder. Only `Inputs/` is necessary to execute the workflow.
+4. At the beginning of `RunPaper2.m`, specify:
 
 ```matlab
 RepositoryDir = '/path/to/Paper2_Reproducibility';
@@ -135,6 +136,8 @@ The analysis-ready inputs distributed with this package are derived from the Hum
 The reproducibility workflow begins from these analysis-ready inputs. It does not reproduce the complete preprocessing of the original Human Connectome Project acquisitions.
 
 Further details regarding participant selection, image preprocessing, connectome construction, and functional-data processing are provided in the accompanying manuscript and its supplementary information.
+
+**Redistribution check before public release:** The inputs are derived from HCP participant data. Confirm that the HCP data-use terms applicable to these processed participant-level derivatives permit public redistribution on Zenodo, including subject identifiers, family-relatedness fields, behavioral scores, and regional time courses. If not, distribute only permitted materials and provide authorized users with instructions to reconstruct the restricted inputs.
 
 ---
 
