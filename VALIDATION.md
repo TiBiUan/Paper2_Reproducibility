@@ -19,7 +19,7 @@ Validation covered:
 
 ## Archive organization
 
-The accompanying data archive distinguishes the following directories:
+The accompanying Zenodo record distributes the data in three separate archives—`Paper2_Data_Inputs.zip`, `Paper2_Data_Original.zip`, and `Paper2_Data_Validation.zip`—which reconstruct the following directories:
 
 ```text
 Paper2_Data/
@@ -28,7 +28,7 @@ Paper2_Data/
 └── Validation/   # Results from the final validation of the released workflow
 ```
 
-`Original/` preserves the historical outputs of the manuscript analyses. `Validation/` contains the results produced by rerunning the cleaned, released workflow and is therefore the appropriate reference when checking a fresh execution of that workflow.
+`Original/` preserves retained historical outputs of the manuscript analyses, excluding redundant duplicate files from the distributed archive. `Validation/` contains the results produced by rerunning the cleaned, released workflow and is therefore the appropriate reference when checking a fresh execution of that workflow.
 
 New executions of `RunPaper2.m` write to the repository's local `results/` directory, leaving the archived `Original/` and `Validation/` outputs unchanged.
 
@@ -52,7 +52,7 @@ Accordingly, readers comparing historical `Original/` figure outputs with `Valid
 
 ## Checking a new execution
 
-1. Obtain the GitHub code release and the corresponding data archive, following `README.md` and `DATA.md`.
+1. Obtain the GitHub code release and `Paper2_Data_Inputs.zip` from Zenodo; obtain `Paper2_Data_Validation.zip` to compare against archived validation results (and optionally `Paper2_Data_Original.zip` for historical outputs). Follow `README.md` and `DATA.md` to reconstruct the data directory.
 2. Configure the repository and data paths in `RunPaper2.m`.
 3. Run the desired analysis stages using the archived inputs and population splits.
 4. Inspect newly generated outputs in the local `results/` directory.
